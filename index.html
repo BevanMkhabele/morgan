@@ -1,152 +1,124 @@
-<!Doctype html>
-<htm>
-  <head>
-      <style>
-      body{
-        
-        background-image: url(background.jpeg);
-      }
-      right-div{
-        display: inline-block;
-        width: 1fr;
-       
-        
-      }
-      .main-div{
-       
-        padding-bottom: 100px;
-        padding-left:20px
-        
-       
-      }
-      .title{
-        text-align: center;
-        font-size:30px;
-        font-family: arial;
-        font-weight:bold;
-        text-decoration: none;
-       
-        
-      }
-      .stats-div{
-        text-align: center;
-      }
-      .most-downloaded{
-        font-weight: bold;
-        text-decoration: none;
-      }
-
-      }
-      p{
-        text-decoration: underline;
-      }
-      .search-bar{
-       
-        padding-left:20px;
-        padding-top:4px;
-        padding-bottom:4px;
-        border-radius: 5px;
-        border-width:thin;
-        
-      }
-      .left-div{
-        width:30x;
-
-        display: inline-block;
-         height: 600px;
-      }
-      .flex-container {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
             display: flex;
-      }
-      .photo{
-        width: 30px;
-      }
-      .search-bar-div{
-         text-align: center;
-      }
-      .button{
-        padding:3px;
-        border-radius: 8px;
-        border-width: thin;
-        margin-top:10px;
-        
-        }
-        .a{
-          margin: 10px;
-        }
-        .background-pic{
-          with:100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
         }
 
-           
-           
-    
-        
-      </style>
-    
-    
-  </head>
-  <body>
-    
-    <div class="flex-container">
-     
-       <div class="left-div">
-      <img class="photo" src="photo.jpeg" alt="photo.jpeg">
-      
-    </div>
-    <div class="right-div">
-      <div class="search-bar-div">
-      <input class="search-bar" type="text" placeholder="Search Song ">
-    </div>
+        .main-div {
+            width: 95%;
+            max-width: 100%;
+            background-color: #f0f0d0;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .card,
+        .details-card,
+        .table-div {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            padding: 0;
+            background-color: #f0f0d0;
+        }
+
+        .details-card {
+            width: 60%;
+            padding: 0;
+            background-color: #f7f7f7;
+            border: 2px solid black;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .table-div {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0; /* Light grey background color */
+            border-bottom: 2px solid #ddd; /* Grey bottom border for table header */
+        }
+
+        .Title {
+            font-family: Arial;
+            font-weight: 600;
+            margin: 9px 0; /* 8px top and bottom margins, 0 left and right */
+        }
+        .bold{
+          font-weight: bold;
+          font-family: arial;
+        }
+        .not-bold{
+          font-weight: 500;
+        }
+    </style>
+</head>
+<body>
     <div class="main-div">
-      
-      <div class="title-div">
-        <p class="title"> Gaza-Nkulu Records  </p>
-        
-      </div>
-      <div class="stats-div">
-         <p class="most-downloaded">
-           Most Downloaded track
-          
-         </p>
-         <div class="list-div">
-           <div>
-              <a  href="url">1.Benny Mayengani</a>
-           </div>
-            <div>
-              <a href="url">2.Benny Mayengani</a>
-           </div>
-           
-             <div>
-              <a href="url">3.Benny Mayengani</a>
-           </div>
-           
-            <div>
-              <a href="url">4.Benny Mayengani</a>
-           </div>
-            <div>
-              <a href="url">5.Benny Mayengani</a>
-           </div>
-            <div>
-              <a href="url">6.Benny Mayengani</a>
-           </div>
-         </div>
-         <div class="button-div">
-           <button class="button">Upload Track</button>
-         </div>
-             
-        
-      </div>
-     
-      
+        <div class="card">
+            <p class="Title">Application Results / Status</p>
+            <div class="details-card">
+                <p class="bold">Student Number<span class="not-bold">:2247304050</span></p>
+                <p class="bold">ID Number<span class="not-bold">:02053164356</span></p>
+                <p class="bold">Name<span class="not-bold">:Nelisiwe Gqinile Mhlongo</span></p>
+            </div>
+        </div>
+
+        <div class="table-div">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Qualification</th>
+                        <th>Faculty</th>
+                        <th>Status</th>
+                        <th>Academic Choice</th>
+                        <th>Application Letter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                        <td>Data 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-      
-    </div>
-      
-      
-    </div>
-   
-    
-    
-  </body>
-</htm>
+</body>
+</html>
