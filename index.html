@@ -14,6 +14,7 @@
             justify-content: center;
             height: 100vh;
             background-color: #f0f0f0;
+            font-family: Arial;
         }
 
         .main-div {
@@ -22,7 +23,6 @@
             background-color: #f0f0d0;
             border: 2px solid black;
             box-sizing: border-box;
-            overflow-x: auto; /* Enable horizontal scrolling */
         }
 
         .card,
@@ -53,6 +53,7 @@
 
         .table-div {
             margin-top: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling if necessary */
         }
 
         table {
@@ -72,21 +73,26 @@
         }
 
         .Title {
-            font-family: Arial;
             font-weight: 600;
             margin: 9px 0;
         }
         .bold {
             font-weight: bold;
-            font-family: arial;
         }
         .not-bold {
             font-weight: 500;
         }
+
+        @media (max-width: 600px) {
+            /* Adjustments for smaller screens */
+            .details-card {
+                width: 90%; /* Adjust the width of details-card for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="main-div overflow-auto">
+    <div class="main-div">
         <div class="card">
             <p class="Title">Application Results / Status</p>
             <div class="details-card">
